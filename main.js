@@ -24,4 +24,4 @@ const firebaseConfig = {
 
 // inisialisasi firebase
 const aplikasi = initializeApp(firebaseConfig)
-const  basis data = getFirestore(aplikasi)
+const  basisdata = getFirestore(aplikasi)
