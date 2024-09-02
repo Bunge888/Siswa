@@ -29,11 +29,11 @@
   
   <script type="module">
     
-    import{ ambilDataSiswa } from './main.js';
+    import{ ambilDaftarSiswa } from './main.js';
     
     $(document).ready(async function() {
       let elemenDaftarSiswa = $("#daftar-Siswa > tbody");
-      let daftarSiswa = await ambilDataSiswa();
+      let daftarSiswa = await ambilDaftarSiswa();
       
       daftarSiswa.forEach((data) => {
         elemenDaftarSiswa.append(
