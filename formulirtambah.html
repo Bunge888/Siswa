@@ -34,14 +34,17 @@
      import { tambahSiswa } from "./main.js";
      
      $(document).ready(async function() {
-       //ambil data dari formulir 
+      
+       
+       //klik tombol tambah
+       $("#tombolsimpan").click (async function(event) {
+         event.preventDefault()
+          //ambil data dari formulir 
        let nama = $("#inputnama").val()
        let nama = $("#inputalamat").val()
        
-       //klik tombol tambah
-       $("#tombolsimpan").click (async function() {
          await tambahSiswa(nama,alamat)
-         widow.location.href = "index.html"
+         widow.location.href = "index"
        }
      })
    </script>
